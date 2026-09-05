@@ -579,13 +579,43 @@ a:hover {
   text-decoration: underline;
 }
 
+.back-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 50;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--ink);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(30, 51, 36, 0.12);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  color: var(--leaf);
+  outline: 2px solid var(--leaf);
+  outline-offset: 2px;
+}
+
+.back-to-top[hidden] {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
   .btn,
-  .guide-link {
+  .guide-link,
+  .back-to-top {
     transition: none;
   }
 }
