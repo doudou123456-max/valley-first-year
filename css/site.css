@@ -166,6 +166,10 @@ a:hover {
   color: var(--mute);
 }
 
+.article-hero .hero-lead {
+  margin-top: 0.85rem;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -306,6 +310,46 @@ a:hover {
   margin-top: 0.75rem;
   max-width: 40rem;
   font-size: 0.82rem;
+}
+
+/* Guide legal note + AdSense / figcaption (AdSense CLS + mobile captions) */
+.legal-note {
+  margin-top: 1.75rem;
+}
+
+.ad-slot {
+  margin: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-slot__inner {
+  width: 100%;
+  max-width: 728px;
+  min-height: 280px;
+  border: 1px dashed color-mix(in srgb, var(--line, #c9c2b4) 80%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--bg, #f7f4ee) 92%, #fff);
+}
+
+.ad-slot__inner:empty::before {
+  content: "Advertisement";
+  display: block;
+  text-align: center;
+  padding: 1.5rem 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mute, #6b655c);
+}
+
+.shot-slot figcaption,
+.shot-slot--photo figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--mute);
 }
 
 /* Guide article */
@@ -491,13 +535,6 @@ a:hover {
   height: auto;
   border-radius: 0.3rem;
   background: #dfeadf;
-}
-
-.shot-slot--photo figcaption {
-  margin-top: 0.45rem;
-  font-size: 0.82rem;
-  line-height: 1.4;
-  color: var(--mute);
 }
 
 .shot-slot--photo figcaption strong {
