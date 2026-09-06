@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stardew Valley Gift Lookup — Year 1 Villager Filter</title>
+  <meta name="description" content="Stardew Valley Year 1 villager gift lookup: filter by name or item, see loved-gift examples and early-game tips. Unofficial fan tool—always check reactions in-game." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://valleyfirstyear.com/guides/gift-lookup.html" />
+  <meta property="og:title" content="Stardew Valley Gift Lookup — Year 1 Villager Filter" />
+  <meta property="og:description" content="Filter Pelican Town villagers by name or gift. Year 1 tips plus loved-gift examples—talk first, verify reactions in-game." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://valleyfirstyear.com/guides/gift-lookup.html" />
+  <meta property="og:image" content="https://valleyfirstyear.com/assets/og-gifting-basics.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Valley First Year" />
+  <meta property="article:modified_time" content="2026-09-06T18:00:00Z" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Stardew Valley Gift Lookup: Year 1 Villager Filter",
+    "description": "Stardew Valley Year 1 villager gift lookup: filter by name or item, see loved-gift examples and early-game tips. Unofficial fan tool—always check reactions in-game.",
+    "dateModified": "2026-09-06T18:00:00Z",
+    "datePublished": "2026-09-06T18:00:00Z",
+    "author": {
+      "@type": "Organization",
+      "name": "Valley First Year"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Valley First Year",
+      "url": "https://valleyfirstyear.com/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://valleyfirstyear.com/guides/gift-lookup.html"
+    },
+    "image": "https://valleyfirstyear.com/assets/og-gifting-basics.png"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Fraunces:opsz,wght@9..144,550;9..144,650&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/site.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3120882987866940"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">Valley First Year</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#guides">Guides</a>
+        <a href="../about.html">About</a>
+        <a href="gift-lookup.html" aria-current="page">Gift lookup</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <header class="article-hero">
+      <p class="kicker">Year 1 · Tool</p>
+      <h1>Stardew Valley Gift Lookup: Year 1 Villager Filter</h1>
+      <p class="updated">Updated: September 6, 2026 · Unofficial fan tool</p>
+      <p class="hero-lead">Type a villager or gift name to filter the table. This is a Year 1 helper—not a complete wiki dump. Always watch the in-game reaction.</p>
+    </header>
+
+    <article class="prose">
+      <div class="note">
+        <p><strong>How to use:</strong> Filter by villager or item text. Prefer birthday gifts over daily spam. For habits and anti-FOMO, read <a href="gifting-basics.html">Gifting basics</a> first.</p>
+        <p>Loved gifts listed are <em>common examples</em> for modern Stardew (1.6-era). Preferences can include more items than we show. If unsure, talk only.</p>
+      </div>
+
+      <aside class="ad-slot" aria-label="Advertisement">
+        <div class="ad-slot__inner" data-ad-slot="gift-lookup-top"></div>
+      </aside>
+
+      <div class="tool-filter" role="search" aria-label="Filter gift table">
+        <label>
+          Search villager or gift
+          <input type="search" id="gift-q" placeholder="e.g. Abigail, Amethyst, Pizza" autocomplete="off" />
+        </label>
+        <label>
+          Early-game focus
+          <select id="gift-focus">
+            <option value="all">All villagers in this table</option>
+            <option value="spring">Easier Year 1 / Spring options</option>
+            <option value="shop">Shop &amp; service NPCs</option>
+          </select>
+        </label>
+        <p class="tool-filter__meta" id="gift-count" aria-live="polite">Showing all rows</p>
+      </div>
+
+      <div class="site-table-wrap">
+        <table class="site-table" id="gift-table">
+          <thead>
+            <tr>
+              <th>Villager</th>
+              <th>Loved gift examples</th>
+              <th>Year 1 tip</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-name="abigail" data-focus="spring" data-gifts="amethyst blackberry cobbler chocolate cake pufferfish pumpkin spicy eel">
+              <td><strong>Abigail</strong></td>
+              <td>Amethyst, Chocolate Cake, Spicy Eel, Pumpkin, Pufferfish</td>
+              <td>Amethyst from early mines/geodes is a strong Year 1 birthday option when you find one.</td>
+            </tr>
+            <tr data-name="alex" data-focus="spring" data-gifts="complete breakfast salmon dinner">
+              <td><strong>Alex</strong></td>
+              <td>Complete Breakfast, Salmon Dinner</td>
+              <td>Talk on gridball days; cooking loves often wait until you have a kitchen.</td>
+            </tr>
+            <tr data-name="caroline" data-focus="shop spring" data-gifts="summer spangle fish taco green tea">
+              <td><strong>Caroline</strong></td>
+              <td>Summer Spangle, Fish Taco, Green Tea</td>
+              <td>Easy to greet near Pierre’s on seed runs—talk first.</td>
+            </tr>
+            <tr data-name="clint" data-focus="shop spring" data-gifts="amethyst aquamarine emerald gold bar iron bar jade omni geode ruby topaz">
+              <td><strong>Clint</strong></td>
+              <td>Most gems, Omni Geode, Gold/Iron Bars</td>
+              <td>Geode trips already take you to his shop—gift a spare gem on birthday mail.</td>
+            </tr>
+            <tr data-name="demetrius" data-focus="spring" data-gifts="bean hotpot ice cream rice pudding strawberry">
+              <td><strong>Demetrius</strong></td>
+              <td>Strawberry, Ice Cream, Bean Hotpot, Rice Pudding</td>
+              <td>Strawberry festival leftovers (if you grow them) can wait in a gift chest.</td>
+            </tr>
+            <tr data-name="elliott" data-focus="spring" data-gifts="crab cakes duck feather lobster pomegranate tom kha soup">
+              <td><strong>Elliott</strong></td>
+              <td>Lobster, Crab Cakes, Duck Feather, Pomegranate, Tom Kha Soup</td>
+              <td>Beach path chats are free; seafood loves are Mid+ Year 1 for many players.</td>
+            </tr>
+            <tr data-name="emily" data-focus="spring" data-gifts="amethyst aquamarine cloth emerald jade ruby survival burger topaz wool">
+              <td><strong>Emily</strong></td>
+              <td>Gems, Wool, Cloth, Survival Burger</td>
+              <td>Saloon evenings make talk easy; gems overlap with Clint targets.</td>
+            </tr>
+            <tr data-name="evelyn" data-focus="spring" data-gifts="beet chocolate cake diamond fairy rose stuffing tulip">
+              <td><strong>Evelyn</strong></td>
+              <td>Tulip, Beet, Chocolate Cake, Diamond, Stuffing</td>
+              <td>Tulips are a calm Spring crop gift if you planted a few.</td>
+            </tr>
+            <tr data-name="george" data-focus="spring" data-gifts="fried mushroom leek">
+              <td><strong>George</strong></td>
+              <td>Leek, Fried Mushroom</td>
+              <td>Spring mountain leeks are a classic early loved gift when you find extras.</td>
+            </tr>
+            <tr data-name="gus" data-focus="shop spring" data-gifts="diamond escargot fish taco orange tropical curry">
+              <td><strong>Gus</strong></td>
+              <td>Fish Taco, Escargot, Orange, Diamond, Tropical Curry</td>
+              <td>Saloon owner—talk after chores; save fancy dishes for birthdays.</td>
+            </tr>
+            <tr data-name="haley" data-focus="spring" data-gifts="coconut fruit salad pink cake sunflower">
+              <td><strong>Haley</strong></td>
+              <td>Coconut, Pink Cake, Sunflower, Fruit Salad</td>
+              <td>Do not stress Flower Dance hearts in Year 1—talk is enough.</td>
+            </tr>
+            <tr data-name="harvey" data-focus="shop spring" data-gifts="coffee pickles super meal truffle oil wine">
+              <td><strong>Harvey</strong></td>
+              <td>Coffee, Pickles, Wine, Super Meal, Truffle Oil</td>
+              <td>Clinic visits are natural talk moments; coffee is a later convenience.</td>
+            </tr>
+            <tr data-name="jas" data-focus="spring" data-gifts="fairy rose pink cake plum pudding">
+              <td><strong>Jas</strong></td>
+              <td>Fairy Rose, Pink Cake, Plum Pudding</td>
+              <td>Kids’ loves are often cooked/dessert—skip until you cook comfortably.</td>
+            </tr>
+            <tr data-name="jodi" data-focus="spring" data-gifts="chocolate cake crispy bass diamond eggplant parmesan fried eel pancakes rhubarb pie vegetable medley">
+              <td><strong>Jodi</strong></td>
+              <td>Diamond, Pancakes, Rhubarb Pie, Chocolate Cake, Vegetable Medley</td>
+              <td>Often outside near town center on errand days—easy talk target.</td>
+            </tr>
+            <tr data-name="leah" data-focus="spring" data-gifts="goat cheese poppyseed muffin salad stir fry truffle vegetable medley wine">
+              <td><strong>Leah</strong></td>
+              <td>Salad, Goat Cheese, Wine, Truffle, Vegetable Medley</td>
+              <td>Forest walks already pass her cabin—talk without a forced gift route.</td>
+            </tr>
+            <tr data-name="lewis" data-focus="shop spring" data-gifts="autumns bounty glazed yams green tea hot pepper vegetable medley">
+              <td><strong>Lewis</strong></td>
+              <td>Hot Pepper, Green Tea, Glazed Yams, Vegetable Medley, Autumn’s Bounty</td>
+              <td>Mayor errands; Hot Pepper is a Summer crop love—Spring can stay talk-only.</td>
+            </tr>
+            <tr data-name="linus" data-focus="spring" data-gifts="blueberry tart cactus fruit coconut dish o the sea yam">
+              <td><strong>Linus</strong></td>
+              <td>Yam, Coconut, Cactus Fruit, Blueberry Tart, Dish o’ The Sea</td>
+              <td>Mountain forage route already finds him—be kind; gifts optional.</td>
+            </tr>
+            <tr data-name="marnie" data-focus="shop spring" data-gifts="diamond farmers lunch pink cake pumpkin pie">
+              <td><strong>Marnie</strong></td>
+              <td>Diamond, Farmer’s Lunch, Pink Cake, Pumpkin Pie</td>
+              <td>Ranch visits for hay/animals—talk on the same trip.</td>
+            </tr>
+            <tr data-name="maru" data-focus="spring" data-gifts="battery pack cauliflower cheese cauliflower diamond gold bar iridium bar miners treat pepper poppers rhubarb pie strawberry">
+              <td><strong>Maru</strong></td>
+              <td>Strawberry, Cauliflower, Diamond, Miner’s Treat, Battery Pack</td>
+              <td>Strawberry / cauliflower overlap with farm goals—park one quality crop for birthday.</td>
+            </tr>
+            <tr data-name="pam" data-focus="spring" data-gifts="beer cactus fruit glazed yams mead pale ale parsnip parsnip soup">
+              <td><strong>Pam</strong></td>
+              <td>Parsnip, Beer, Pale Ale, Parsnip Soup, Cactus Fruit</td>
+              <td>Starter parsnips can become a birthday gift if you keep one.</td>
+            </tr>
+            <tr data-name="penny" data-focus="spring" data-gifts="diamond emerald melon poppy poppyseed muffin red plate roots platter sandfish tom kha soup">
+              <td><strong>Penny</strong></td>
+              <td>Poppy, Melon, Diamond, Emerald, Roots Platter, Tom Kha Soup</td>
+              <td>Often near town trailer/paths—talk on library/museum days.</td>
+            </tr>
+            <tr data-name="pierre" data-focus="shop spring" data-gifts="fried calamari">
+              <td><strong>Pierre</strong></td>
+              <td>Fried Calamari (and limited other loves)</td>
+              <td>You already see him for seeds—daily talk beats rare cooked loves early.</td>
+            </tr>
+            <tr data-name="robin" data-focus="shop spring" data-gifts="goat cheese peach spaghetti">
+              <td><strong>Robin</strong></td>
+              <td>Peach, Goat Cheese, Spaghetti</td>
+              <td>Carpenter trips are free social time; gift when fruit/cheese appear later.</td>
+            </tr>
+            <tr data-name="sam" data-focus="spring" data-gifts="cactus fruit maple bar pizza tigerseye">
+              <td><strong>Sam</strong></td>
+              <td>Pizza, Maple Bar, Cactus Fruit, Tigerseye</td>
+              <td>Town skateboard days—talk; pizza loves wait on cooking/Saloon buys.</td>
+            </tr>
+            <tr data-name="sebastian" data-focus="spring" data-gifts="frozen tear obsidian pumpkin soup sashimi void egg">
+              <td><strong>Sebastian</strong></td>
+              <td>Frozen Tear, Obsidian, Sashimi, Void Egg, Pumpkin Soup</td>
+              <td>Frozen Tears from early mines pair well with birthday prep.</td>
+            </tr>
+            <tr data-name="shane" data-focus="spring" data-gifts="beer hot pepper pepper poppers pizza">
+              <td><strong>Shane</strong></td>
+              <td>Hot Pepper, Pepper Poppers, Pizza, Beer</td>
+              <td>Often at ranch/Saloon; Hot Pepper is Summer—Spring = talk.</td>
+            </tr>
+            <tr data-name="vincent" data-focus="spring" data-gifts="grape pink cake cranberry candy snail">
+              <td><strong>Vincent</strong></td>
+              <td>Grape, Pink Cake, Cranberry Candy, Snail</td>
+              <td>Same rule as Jas—don’t burn energy snacks on kid gifts early.</td>
+            </tr>
+            <tr data-name="willy" data-focus="shop spring" data-gifts="catfish diamond iridium bar mead octopus sea cucumber sturgeon">
+              <td><strong>Willy</strong></td>
+              <td>Catfish, Diamond, Mead, Octopus, Sea Cucumber, Sturgeon</td>
+              <td>Dock fishing days already put you next to him—talk after casts.</td>
+            </tr>
+            <tr data-name="wizard" data-focus="spring" data-gifts="purple mushroom solar essence super cucumber void essence">
+              <td><strong>Wizard</strong></td>
+              <td>Purple Mushroom, Solar Essence, Void Essence, Super Cucumber</td>
+              <td>Tower visits are Mid Spring+ for many saves; not a day-one gift route.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="ad-slot" aria-label="Advertisement">
+        <div class="ad-slot__inner" data-ad-slot="gift-lookup-mid"></div>
+      </aside>
+
+      <h2 id="how">How we use this on our save</h2>
+      <ol>
+        <li>Check mail / calendar for birthdays.</li>
+        <li>Search that villager here and see if we already have a loved example in the gift chest.</li>
+        <li>If not, talk only—do not force a disliked forage.</li>
+        <li>Return to watering and money loops; social is a side quest in Year 1.</li>
+      </ol>
+
+      <h2 id="faq">FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>Is this every loved gift in the game?</summary>
+          <p>No. It is a Year 1 lookup subset with common loved examples. Check the Collections / villager taste UI and in-game reactions for the full picture.</p>
+        </details>
+        <details>
+          <summary>Why isn’t every villager listed?</summary>
+          <p>We prioritized town NPCs you meet while running Year 1 errands. More rows can be added later without turning this into a wiki mirror.</p>
+        </details>
+        <details>
+          <summary>Should I gift every day?</summary>
+          <p>Usually no. See <a href="gifting-basics.html">Gifting basics</a>—birthday-first beats daily spam.</p>
+        </details>
+      </div>
+
+      <aside class="ad-slot" aria-label="Advertisement">
+        <div class="ad-slot__inner" data-ad-slot="gift-lookup-faq"></div>
+      </aside>
+
+      <h2 id="related">Related</h2>
+      <div class="related-links">
+        <a href="gifting-basics.html">Gifting basics</a>
+        <a href="flower-dance.html">Flower Dance</a>
+        <a href="community-center.html">Community Center</a>
+        <a href="../index.html">← Hub home</a>
+      </div>
+      <p class="legal-note"><em>Unofficial fan tool. Not affiliated with ConcernedApe. Always verify gift reactions in your own game.</em></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="../index.html">Valley First Year</a>
+      <p><a href="../about.html">About</a> · <a href="../privacy.html">Privacy</a> · <a href="../contact.html">Contact</a></p>
+    </div>
+  </footer>
+  <script src="../js/site.js" defer></script>
+  <script>
+  (function () {
+    var q = document.getElementById("gift-q");
+    var focus = document.getElementById("gift-focus");
+    var count = document.getElementById("gift-count");
+    var rows = Array.prototype.slice.call(document.querySelectorAll("#gift-table tbody tr"));
+    if (!q || !focus || !rows.length) return;
+
+    function applyFilter() {
+      var text = (q.value || "").trim().toLowerCase();
+      var mode = focus.value;
+      var shown = 0;
+      rows.forEach(function (row) {
+        var name = row.getAttribute("data-name") || "";
+        var gifts = row.getAttribute("data-gifts") || "";
+        var f = row.getAttribute("data-focus") || "";
+        var hay = (name + " " + gifts + " " + row.textContent).toLowerCase();
+        var textOk = !text || hay.indexOf(text) !== -1;
+        var focusOk = mode === "all" || f.indexOf(mode) !== -1;
+        var ok = textOk && focusOk;
+        row.classList.toggle("is-hidden", !ok);
+        if (ok) shown += 1;
+      });
+      if (count) count.textContent = "Showing " + shown + " of " + rows.length + " villagers";
+    }
+
+    q.addEventListener("input", applyFilter);
+    focus.addEventListener("change", applyFilter);
+    applyFilter();
+  })();
+  </script>
+</body>
+</html>
