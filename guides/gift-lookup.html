@@ -93,6 +93,7 @@
           </select>
         </label>
         <p class="tool-filter__meta" id="gift-count" aria-live="polite">Showing all rows</p>
+        <p class="tool-filter__empty is-hidden" id="gift-empty" role="status">No villagers match. Try a shorter name, a different gift word, or set focus to “All.”</p>
       </div>
 
       <div class="site-table-wrap">
@@ -289,6 +290,7 @@
       <h2 id="related">Related</h2>
       <div class="related-links">
         <a href="gifting-basics.html">Gifting basics</a>
+        <a href="spring-calendar.html">Spring calendar</a>
         <a href="flower-dance.html">Flower Dance</a>
         <a href="community-center.html">Community Center</a>
         <a href="../index.html">← Hub home</a>
@@ -309,6 +311,7 @@
     var q = document.getElementById("gift-q");
     var focus = document.getElementById("gift-focus");
     var count = document.getElementById("gift-count");
+    var empty = document.getElementById("gift-empty");
     var rows = Array.prototype.slice.call(document.querySelectorAll("#gift-table tbody tr"));
     if (!q || !focus || !rows.length) return;
 
@@ -327,7 +330,12 @@
         row.classList.toggle("is-hidden", !ok);
         if (ok) shown += 1;
       });
-      if (count) count.textContent = "Showing " + shown + " of " + rows.length + " villagers";
+      if (count) {
+        count.textContent = shown === 0
+          ? "No matches"
+          : "Showing " + shown + " of " + rows.length + " villagers";
+      }
+      if (empty) empty.classList.toggle("is-hidden", shown !== 0);
     }
 
     q.addEventListener("input", applyFilter);
