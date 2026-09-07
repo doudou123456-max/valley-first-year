@@ -1,4 +1,23 @@
 (function () {
+  var GA_ID = "G-LPYD8DX450";
+  if (!GA_ID || window.__vfyGaLoaded) return;
+  window.__vfyGaLoaded = true;
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+  gtag("js", new Date());
+  gtag("config", GA_ID);
+
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+  document.head.appendChild(s);
+})();
+
+(function () {
   if (!document.querySelector(".back-to-top")) {
     var btn = document.createElement("button");
     btn.type = "button";
