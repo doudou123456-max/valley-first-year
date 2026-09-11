@@ -363,6 +363,13 @@ a:hover {
   justify-content: center;
 }
 
+/* Hide empty ad placeholders until AdSense units are filled (better review ratio). */
+.ad-slot:has(.ad-slot__inner:empty) {
+  display: none;
+  margin: 0;
+  min-height: 0;
+}
+
 .ad-slot__inner {
   width: 100%;
   max-width: 728px;
